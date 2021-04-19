@@ -29,6 +29,8 @@ class SignIn: AppCompatActivity() {
                     Toast.makeText(this@SignIn, "LOGIN SUCCESS!!!", Toast.LENGTH_LONG).show()
                     //dung intent o day de chuyen sang man hinh khac sau khi dang nhap thanh cong
                     //ok
+                    val intent = Intent(this@SignIn,RestaurantListActivity::class.java)
+                    startActivity(intent)
                 }
                 else
                     Toast.makeText(this@SignIn, "LOGIN FAILED", Toast.LENGTH_LONG).show()
