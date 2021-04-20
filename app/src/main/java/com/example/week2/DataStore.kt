@@ -24,6 +24,6 @@ fun getRestaurantList(): List<Restaurant> {
         Restaurant("Bánh Mì Chảo & Món Ngon Hoa Việt - Quán Cô 3 Hậu","36 Đường Số 18, P. 8","https://images.foody.vn/res/g13/129725/prof/s180x180/foody-mobile-foody-quan-co-3-hau--960-635652896252263911.jpg"),
         Restaurant("Kichi Kichi Lẩu Băng Chuyền - Quang Trung","1 Quang Trung","https://images.foody.vn/res/g5/46668/prof/s180x180/foody-mobile-rfokfbsk-jpg-859-635796372049634356.jpg"),
         Restaurant( "The Coffee House - Quang Trung","293 Quang Trung","https://images.foody.vn/res/g16/158187/prof/s180x180/foody-mobile-coffeehousequangtrun-822-635754530645782536.jpg"),
-        Restaurant("Cánh Đồng Quán - Lẩu Nướng Tại Bàn - Dương Quảng Hàm","310/14 Dương Quảng Hàm, P. 5","https://images.foody.vn/res/g4/30102/prof/s180x180/foody-mobile-shwadjuj-jpg-413-636204369735412311.jpg")
+        Restaurant("Cánh Đồng Quán - Lẩu Nướng Tại Bàn","310/14 Dương Quảng Hàm, P. 5","https://images.foody.vn/res/g4/30102/prof/s180x180/foody-mobile-shwadjuj-jpg-413-636204369735412311.jpg")
     )
 }

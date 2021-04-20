@@ -1,5 +1,6 @@
 package com.example.week2
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class RestaurantAdapter:RecyclerView.Adapter<RestaurantAdapter.ViewHolder>() {
+class RestaurantAdapterGrid(applicationContext: Context) :RecyclerView.Adapter<RestaurantAdapterGrid.ViewHolder>() {
     var data:List<Restaurant> = listOf()
         set(value) {
         field = value
@@ -36,7 +37,7 @@ class RestaurantAdapter:RecyclerView.Adapter<RestaurantAdapter.ViewHolder>() {
         companion object {
             fun from(parent: ViewGroup):ViewHolder{
                 val inflater = LayoutInflater.from(parent.context)
-                val view = inflater.inflate(R.layout.restaurant_item_view,parent,false)
+                val view = inflater.inflate(R.layout.restaurant_item_gridview,parent,false)
                 return ViewHolder(view)
             }
         }

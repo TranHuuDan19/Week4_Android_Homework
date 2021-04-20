@@ -14,12 +14,26 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcList"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="402dp"
+            android:layout_height="705dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Switch
+            android:id="@+id/swMode"
+            android:layout_width="90dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="Grid"
+            android:textSize="14dp"
+            android:textColor="#00BCD4"
+            android:textStyle="bold"
+            android:shadowColor="#1D8F9E"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
