@@ -25,15 +25,15 @@ class SignIn: AppCompatActivity() {
                 viewModel.account.email    = tvEmailSignIn.text.toString().trim()
                 viewModel.account.password = tvPassSignIn.text.toString().trim()
 
-                if (viewModel.account?.email.compareTo(DataStore.account.email.trim()) == 0 && viewModel.account.password?.compareTo( DataStore.account.password.trim()) == 0 ) {
-                    Toast.makeText(this@SignIn, "LOGIN SUCCESS!!!", Toast.LENGTH_LONG).show()
-                    //dung intent o day de chuyen sang man hinh khac sau khi dang nhap thanh cong
-                    //ok
+                if (viewModel.account?.email.compareTo(DataStore.account.email.trim()) == 0 && viewModel.account.password?.compareTo( DataStore.account.password.trim()) == 0 )
+                {
                     val intent = Intent(this@SignIn,RestaurantListActivity::class.java)
+                    Toast.makeText(this@SignIn, "LOGIN SUCCESS!!!" +"\n"+ viewModel.account.email + viewModel.account.password , Toast.LENGTH_LONG).show()
                     startActivity(intent)
                 }
                 else
-                    Toast.makeText(this@SignIn, "LOGIN FAILED", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@SignIn, "LOGIN FAILED" +"\n" +viewModel.account.email + viewModel.account.password , Toast.LENGTH_LONG).show()
+
                 invalidateAll()
             }
         }
